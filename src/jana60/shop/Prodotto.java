@@ -22,7 +22,7 @@ public class Prodotto {
     }
     String prezzoFormat() {
         DecimalFormat df = new DecimalFormat("#.00\u00A4");
-        String format = "Il prezzo di "+nome+" è "+df.format(prezzo) +" Aggiungendo l'iva diventa: "+df.format(prezzoFinale());
+        String format = df.format(prezzoFinale());
         return format;
     }
 }
