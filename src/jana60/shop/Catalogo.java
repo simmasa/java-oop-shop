@@ -26,6 +26,8 @@ public class Catalogo {
         }
         primo.close();
 
+        System.out.println("Il nostro catalogo");
+        System.out.printf("%15s%15s%15s%15s\n", "Marca" , "Nome" , "Prezzo" , "Prezzo con IVA");
         for (int i =0;i< catalogo.length;i++) {     //non mi ricordo se il for enhanced era stato spiegato
             System.out.printf("%15s%15s%15s%15s\n", catalogo[i].marca , catalogo[i].nome , String.format("%.2f", catalogo[i].prezzo)+"€" , catalogo[i].prezzoFormat());
         }
